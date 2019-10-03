@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="5dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_mobile_post_colour"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <TextView
+            style="@style/ToolbarTitle"
+            android:background="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:id="@+id/title"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Adicionar paciente"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:nextFocusRight="@id/emailfield"
+                android:id="@+id/clientname"
+                android:hint="Nome do paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:backgroundTint="@color/md_grey_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:nextFocusRight="@id/phonefield"
+                android:id="@+id/cpffield"
+                android:hint="Cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:backgroundTint="@color/md_grey_200"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:nextFocusRight="@id/phonefield"
+                android:id="@+id/emailfield"
+                android:hint="E-mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:backgroundTint="@color/md_grey_200"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phonefield"
+                android:hint="Telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="phone"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/datefield"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Data de nascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="date"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:text="Cadastrar-se"
+                android:onClick="sendCliente"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
