@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -53,11 +54,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:inputType="number"
+                    app:mask="###.###.###-##" />
+                <!--EditText
                     android:backgroundTint="@color/md_grey_200"
                     android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" /-->
+
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:nextFocusRight="@id/phonefield"
@@ -72,17 +80,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/phonefield"
                 android:hint="Telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:inputType="phone"
+                    app:mask="(##)#####-####" />
+
+                <!--EditText
                     android:inputType="phone"
                     android:backgroundTint="@color/md_grey_200"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" /-->
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -93,11 +110,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:inputType="date"
+                    app:mask="##/##/####" />
+
+                <!--EditText
                     android:inputType="date"
                     android:backgroundTint="@color/md_grey_200"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" /-->
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button

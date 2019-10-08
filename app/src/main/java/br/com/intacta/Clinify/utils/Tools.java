@@ -12,6 +12,7 @@ public class Tools {
     public static final int RC_SIGN_IN = 123;
 
     public static final String userPath = "Users";
+    public static final String patientsPath = "Patients";
     public static final String agenda = "Agenda";
     public static final String compromises = "Compromissos";
     public static final String patients = "Pacientes";
